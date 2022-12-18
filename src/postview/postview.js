@@ -6,7 +6,7 @@ function Preview(){
   const[co,setco]=useState(1)
     
     useEffect(()=>{
-     fetch(" https://backebinta.onrender.com/post").then((res)=>res.json()).then((res)=>{
+     fetch("/post").then((res)=>res.json()).then((res)=>{
 
 
   setdata(res.p)
@@ -56,19 +56,7 @@ function Preview(){
               <div>
                 <p className="bn">{elem.description}</p>
               </div>
-              <div>
-                <button id="de"  onClick={()=>{
-                    fetch(`https://backebinta.onrender.com/delete/?_id=${elem._id}`, {
-                      method: 'DELETE',
-                   
-                    
-                      //if you do not want to send any addional data,  replace the complete JSON.stringify(YOUR_ADDITIONAL_DATA) with null
-                    }).then((res)=>{res.json()}).then((res)=>{
-                      console.log(res.k)
-                    })
-
-}}>delete</button>
-              </div>
+  
 
         </section>})}
        </div>
