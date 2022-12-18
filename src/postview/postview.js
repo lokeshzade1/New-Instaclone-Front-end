@@ -6,7 +6,7 @@ function Preview(){
   const[co,setco]=useState(1)
     
     useEffect(()=>{
-     fetch("/post").then((res)=>res.json()).then((res)=>{
+     fetch("http://localhost:8080/post").then((res)=>res.json()).then((res)=>{
 
 
   setdata(res.p)

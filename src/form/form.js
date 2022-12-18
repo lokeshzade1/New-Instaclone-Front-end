@@ -21,75 +21,13 @@ import "./form.css"
           description:state.description
       }
 
- const   data=await  axios.post("/add/user", newPost, config)
+ const   data=await  axios.post("http://localhost:8080/add/user", newPost, config)
         console.log(data)
         
   }
-  // async   function fop(){
-        //     const form = new FormData();
-        // form.append("image",state.image);
-        //  form.append("upload_preset", "shashank");
-  // const data =await fetch("https://api.cloudinary.com/dzzixdcs1/demo/image/upload",{
-  //   method:"POST",
-  //   crossorigin: true,  
-  //   mode: 'no-cors',
-  //   body:form
-  // }).then((res)=>res.json())
-
-  // console.log("data"+data)
-
-  // const config={
-  //   "content-type":"multipart/form-data",
-  //   "Access-Control-Allow-Origin":"*"
-  // };
   
-  // axios.post("https://api.cloudinary.com/dzzixdcs1/demo/image/upload",form,config).then((res)=>{
-  //   console.log(res)
-  // })
-
-
-
-
-
-      // console.log(1)
-      //  const formdata= new FormData();
-      //  formdata.append("image",state.image,state.image.name)
-      //  formdata.append("auther",state.auther)
-      //  formdata.append("location",state.location)
-      //  formdata.append("description",state.description)
-      // setpic(state.image)
-      //  console.log(1)
-      //  console.log(formdata,9808080)
-        // try {
-        //   console.log(1)
-        //   const res=await axios.post("http://localhost:8080/add/user",state)
-        //    if(res.status==200){
-        //     console.log("added",res.data)
-        //    }
-        // } catch (e) {
-        //   console.log(e,"err")
-        // }
-    //  const res=await  fetch('http://localhost:8080/add/user', {
-    //     method: 'POST',
-    //     headers: {
-            
                 
-          
-    //       'Content-Type': 'multipart/form-data'
-              
-    //       },
-    //     body:  state
-    //   })
-    //   const t=  await res.json();
-    //   console.log(t)
-
-
-    //  }
-// useEffect(()=>{
-//     setTimeout(() => {
-//         window.location.href = '/postview';
-//       }, 1000);
-// },[])
+      
 
     return<>
         
